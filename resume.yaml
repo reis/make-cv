@@ -1,31 +1,23 @@
 contact:
-    name: David Y. Hu
-    email: 'david@[david-hu.com](http://david-hu.com)'
-    github: '[github.com/divad12](https://github.com/divad12)'
-    stackoverflow: '[stackoverflow.com/users/392426](http://stackoverflow.com/users/392426)'
+    name: Andre Leite Reis
+    email: '[andre.reis@gmail.com](mailto:anndre.reis@gmail.com)'
+    github: '[github.com/reis](https://github.com/d=reis)'
+    
+summary:
+    - 'BS in Computer Science, having expertise in software development, data analysis and databases'
+    - '20+ years of professional experience in IT working in different industries, using different methodologies and technologies'
+    - 'Experienced in business operations like Billing, CRM, sales pipeline, contact center management, e-commerce, provisioning data center services, VoIP, telecommunications, higher education and research market'
 
-projects:
-    - '[VimAwesome.com](http://vimawesome.com): Directory of most popular Vim plugins sourced from GitHub and Vim.org, built with React and RethinkDB.'
-    - '[NumbersAPI.com](http://numbersapi.com): An API for interesting facts about numbers (about 10K requests per day). Blog post: [david-hu.com/numapi.html](http://david-hu.com/numapi.html)'
-    - 'Personal blog [david-hu.com](http://david-hu.com): 50 000 unique visitors'
-    - 'Built web apps in Flask + MongoEngine, Rails + Mongoid, App Engine, Node.js + Express, Django + MySQL, C# + ASP.NET'
-    - 'First place optimizing compiler for university competition'
-    - 'Artificial intelligence bots: Gomoku, competition Tron, competition Rock-Paper-Scissors'
-    - 'WEP/WPA penetration-testing GUI application on BackTrack 3'
-    - 'Designed and implemented a trie-based word-prediction system for an educational toy robot'
-    - 'MSN plugins: conversation bot, multiplayer display name game'
-    - 'High school: FIRST Robotics controller, Xbox 360 game, tournament scheduler, automation scripts'
-#- Technical Knowledge:
-    #- 'Python (Django, Google App Engine): Khan Academy backend, social web startup, hobby projects'
-    #- 'JavaScript: Optimizations and browser bug workarounds for Google Docs; Node.js; jQuery'
-    #- 'C++: 6 years of experience through work, personal projects, contests, robotics, and school'
-    #- 'Experienced with HTML, CSS, Sass + Compass, Java, Swing, C, Google Closure Tools, MIPS assembly, AWS (EC2, Elastic MapReduce, S3), Hadoop, GNU Make, Qt'
-    #- 'Prior experience: Bash scripting, Scheme, LaTeX, XPath, C#'
-    #- 'Platforms: Linux command line, Ubuntu, Mac OS X, Windows'
-    #- 'Tools: Proficient with Vim and Git; worked with Mercurial, Perforce, SVN, Visual Studio' # gdb, Nginx
-#- General:
-    #- 'Regularly competes in programming contests, including ACM, Google AI contest, CCC, Project Euler, USACO' # ECOO, DWITE, TopCoder, IBM CASCON, IPSC
-    #- 'Interested in startups, AI, machine learning, compilers, algorithms'
+skills:
+    - 'Operating Systems': 
+        - 'Linux (Arch, Debian, Ubuntu, CentOS, Fedora), Windows and OSX'
+    - 'Networks': Internet suite, Sockets, APIs, Webservices'
+    - 'Programming Languages': 
+        - 'PHP, Python, Shell Script, Java, JavaScript'
+    - 'Databases and Data Science': 
+        - 'PostgreSQL, Oracle, MS-SQL, PL/pgSQL, Python and R'
+    - 'Virtualization: 
+        - 'VirtualBox, VMWare, Xen, Cloudstack, Docker, Vagrant'
 
 work:
     - employer: Khan Academy

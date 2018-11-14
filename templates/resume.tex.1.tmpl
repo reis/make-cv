@@ -1,11 +1,11 @@
 ## Change delimiters for Cheetah
 #compiler-settings
-cheetahVarStartToken = &
+cheetahVarStartToken = ;
 directiveStartToken = !
 #end compiler-settings
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% WARNING: &warning
+% WARNING: ;warning
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[margin,line]{res}
@@ -44,8 +44,8 @@ directiveStartToken = !
 \begin{document}
 \begin{sloppypar} % So long words will wrap to the next line instead of overflowing
 
-\name{&contact.name}
-\address{&contact.github\hspace{1cm}&contact.email}
+\name{;contact.name}
+\address{;contact.github\hspace{1cm};contact.email}
 \break
 \begin{resume}
 
@@ -57,17 +57,17 @@ directiveStartToken = !
   \body\\
 \end{format}
 
-!for &position in &work
-    \employer{\textbf{&position.employer}}
-    \title{&position.title}
-    \location{&position.location}
-    \dates{&position.dates}
+!for ;position in ;work
+    \employer{\textbf{;position.employer}}
+    \title{;position.title}
+    \location{;position.location}
+    \dates{;position.dates}
     \begin{position}
         \vspace{-.3cm}
-        !if &position.description
+        !if ;position.description
             \begin{itemize}
-            !for &point in &position.description
-                \item &point
+            !for ;point in ;position.description
+                \item ;point
             !end for
             \end{itemize}
         !else
@@ -79,8 +79,8 @@ directiveStartToken = !
 
 \section{Other Projects}
 \begin{itemize}
-!for &item in &projects
-    \item &item
+!for ;item in ;projects
+    \item ;item
 !end for
 \end{itemize}
 
@@ -92,12 +92,12 @@ directiveStartToken = !
   \body\\
 \end{format}
 
-!for &activity in &university
-    \title{\textbf{&activity.who}}
-    \location{&activity.when}
+!for ;activity in ;university
+    \title{\textbf{;activity.who}}
+    \location{;activity.when}
     \begin{position}
-        !if &activity.what
-            &activity.what
+        !if ;activity.what
+            ;activity.what
         !else
             \vspace{-0.5cm}
         !end if
@@ -107,12 +107,12 @@ directiveStartToken = !
 
 \section {High School Activities}
 
-!for &activity in &highSchool
-    \title{\textbf{&activity.who}}
-    \location{&activity.when}
+!for ;activity in ;highSchool
+    \title{\textbf{;activity.who}}
+    \location{;activity.when}
     \begin{position}
-        !if &activity.what
-            &activity.what
+        !if ;activity.what
+            ;activity.what
         !else
             \vspace{-0.5cm}
         !end if
@@ -128,16 +128,16 @@ directiveStartToken = !
   \body\\
 \end{format}
 
-!for &school in &education
-    \title{\textbf{&school.degree}}
-    \dates{&school.dates}
-    \location{&school.school}
+!for ;school in ;education
+    \title{\textbf{;school.degree}}
+    \dates{;school.dates}
+    \location{;school.school}
     \begin{position}
         \vspace{-.3cm}
-        !if &school.description
+        !if ;school.description
             \begin{itemize}
-            !for &point in &school.description
-                \item &point
+            !for ;point in ;school.description
+                \item ;point
             !end for
             \end{itemize}
         !else
@@ -149,14 +149,14 @@ directiveStartToken = !
 
 \section{Awards}
 \begin{itemize}
-    !for &award in &awards
-        \item &award
+    !for ;award in ;awards
+        \item ;award
     !end for
 \end{itemize}
 
 
 \section{Interests}
-&interests
+;interests
 
 
 \vfill

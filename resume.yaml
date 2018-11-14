@@ -1,174 +1,148 @@
 contact:
     name: Andre Leite Reis
     email: '[andre.reis@gmail.com](mailto:anndre.reis@gmail.com)'
-    github: '[github.com/reis](https://github.com/d=reis)'
+    github: '[github.com/reis](https://github.com/reis)'
+    linkedin: '[linkedin.com/in/andreleitereis](https://linkedin.com/in/andreleitereis)'
+    twitter: '[twitter.com/mrkings](https://twitter.com/mrkings)'
     
 summary:
-    - 'BS in Computer Science, having expertise in software development, data analysis and databases'
-    - '20+ years of professional experience in IT working in different industries, using different methodologies and technologies'
-    - 'Experienced in business operations like Billing, CRM, sales pipeline, contact center management, e-commerce, provisioning data center services, VoIP, telecommunications, higher education and research market'
+    - BS in Computer Science, having expertise in software development, data analysis and databases
+    - 20+ years of professional experience in IT working in different industries, using different methodologies and technologies'
+    - Experienced in business operations like Billing, CRM, sales pipeline, contact center management, e-commerce, provisioning data center services, VoIP, telecommunications, higher education and research market'
 
 skills:
-    - 'Operating Systems': 
-        - 'Linux (Arch, Debian, Ubuntu, CentOS, Fedora), Windows and OSX'
-    - 'Networks': Internet suite, Sockets, APIs, Webservices'
-    - 'Programming Languages': 
-        - 'PHP, Python, Shell Script, Java, JavaScript'
-    - 'Databases and Data Science': 
-        - 'PostgreSQL, Oracle, MS-SQL, PL/pgSQL, Python and R'
-    - 'Virtualization: 
-        - 'VirtualBox, VMWare, Xen, Cloudstack, Docker, Vagrant'
+    - Operating Systems: Linux (Arch, Debian, Ubuntu, CentOS, Fedora), Windows and OSX
+    - Networks: Internet suite, Sockets, APIs, Webservices
+    - Programming Languages: PHP, Python, Shell Script, Java, JavaScript
+    - Databases and Data Science: PostgreSQL, Oracle, MS-SQL, PL/pgSQL, Python and R
+    - Virtualization: VirtualBox, VMWare, Xen, Cloudstack, Docker, Vagrant
 
 work:
-    - employer: Khan Academy
-      title: Software Engineer
-      location: Mountain View, CA
-      dates: June 2014 - Present
-      description: []
-    - employer: Sift Science
-      title: Software Developer Intern
-      location: San Francisco, CA
-      dates: January 2013 - August 2013
-      description:
-        - "Led the development and design of our user-facing product: fraud visualization dashboard"
-        - 'Set up the frontend stack consisting of Backbone.js, Marionette.js, Handlebars.js, and others'
-        - 'Redesigned home page, jobs page, pricing page, blog page; mentored an intern during summer'
-    - employer: '[uwflow.com](http://uwflow.com): social course planning'
-      title: Co-founder
-      location: Waterloo, Canada
-      dates: September 2012 - Present
-      description:
-        - 'Side project with two friends. Beta has 3800 users and 50 000 user-submitted ratings'
-        - 'Worked with Sass, Bootstrap, Require.js, Backbone, Redis, Mongo, Python + Flask, AWS'
-        - 'Coding, UI design, system administration, A/B testing, emails, pitching, team planning'
-    - employer: Khan Academy
-      title: Software Developer Intern
-      location: Mountain View, CA
-      dates: May 2012 - August 2012
-      description:
-        - 'Presented a [TEDx talk](http://storify.com/tedxufm/tedxufm-david-hu-divad-12-on-tedxufm-2012) on my previous work'
-        - 'Full-stack data analytics: Apache Hive for data warehousing and Backbone.js and Bootstrap for frontend dashboard'
-        - '3 hackathon projects in 24hrs (all shipped): real-time map of users; 2x video speed; RSS feed'
-        - 'Independently conceived and wrote continuous integration & deployment tool: [github.com/Khan/gae-continuous-deploy](https://github.com/Khan/gae-continuous-deploy)'
-        - 'Organized bike trip from Mountain View to SF; [helped new interns](https://github.com/Khan/khan-dotfiles); popular [CS hack project](http://www.khanacademy.org/cs/m/938561708)'
-    - employer: Khan Academy
-      title: Software Developer Intern
-      location: Mountain View, CA
-      dates: August 2011 - December 2011
-      description:
-        - 'Proposed and implemented machine learning model for new proficiency model. Blog post (Hacker News frontpaged): [david-hu.com/ka-ml.html](http://david-hu.com/ka-ml.html)'
-        - 'Increased student proficiencies by 20%, hint usage by 55%, review problem usage by 22%'
-        - 'Data viz in Python; map reduce scripts; UI design; see [david-hu.com/ka-internship-post-mortem.html](http://david-hu.com/ka-internship-post-mortem.html)'
-        - 'See GitHub commits ([david-hu.com/ka-github.html](http://david-hu.com/ka-github.html)) and [Kiln changesets](http://david-hu.com/ka-kiln.html)'
-    - employer: University of Waterloo
-      title: Undergraduate Research Assistant
-      location: Waterloo, ON
-      dates: May 2011 - August 2011
-      description:
-        - 'Implemented map reduce algorithms to cluster near-duplicate documents in a web crawl'
-        - 'Optimized runs for Hadoop running on Amazon Elastic MapReduce'
-    - employer: Google
-      title: Software Intern
-      location: Mountain View, CA
-      dates: January - April, 2011
-      description:
-        - 'Designed and implemented a multi-threaded cross-platform automation framework for Google Earth in C++'
-    - employer: Google
-      title: Software Intern - Mobile
-      location: Waterloo, ON
-      dates: May - August, 2010
-      description:
-        - 'Implemented product features for Google Mobile Docs; find workarounds for browser bugs'
-        - 'Derived cubic Bezier math for emulating native scrolling using CSS 3D transforms - [googlemobile.blogspot.com/2010/10/gmail-in-mobile-safari-now-even-more.html](http://googlemobile.blogspot.com/2010/10/gmail-in-mobile-safari-now-even-more.html)'
-        - 'Optimized speed by exploiting JavaScript implementations and improving data structures'
-    - employer: TD Bank Financial Group
-      title: IT Student Analyst
-      location: Toronto, ON
-      dates: August 2009
-      description:
-        - 'Developed data analysis and report tools; developed automation software saving hours per day'
-#    - employer: CSC Assembly (Computer Store)
-#      title: Repair assistant
-#      location: Toronto, ON
-#      dates: Summer 2007, 2008
-#      description: []
-
-university:
-    - who: Entrepreneurial Project Programmer
-      where: University of Waterloo
-      when: 2010, 2012
-      what: 'In teams, developed a social course planner ([uwflow.com](http://uwflow.com), 2000 registered users); professional [network-building service](http://velocity.uwaterloo.ca/student-posts/heres-looking-at-you-cinq-me); motivational learning website'
-    - who: ACM Programming Contest Competitor
-      where: University of Waterloo
-      when: 2009 Fall
-      what: 'One of 9 students selected to represent U Waterloo. Trained five hours twice per week with teammates on algorithm problems. Rapidly wrote and debugged code during competition; attained 13th out of 115 at East Central North America.'
-    - who: Software Engineering Class Representative
-      where: University of Waterloo
-      when: 2009 Fall - Present
-      what: 'Took the initiative to write weekly email updates to the class. Co-founded the "Give Me Your Knowledge" student talks series. Founded course on open-source development (work in progress) - [os499.github.com](http://os499.github.com)'
-    - who: IEEE Student Branch Member
-      where: University of Waterloo
-      when: 2009 Fall - Present
-      what: "Designed and implemented a mailing system for U Waterloo's IEEE website in ASP.NET and C#."
-
-highSchool:
-    - who: Programming Team Leader
-      where: High School
-      when: 2007 - 2009
-      what: 'Revitalized club: advertised, recruited, taught lessons, organized practices, motivated participants. Achieved top 5 in provincial competition.'
-    - who: FIRST Robotics Team Leader
-      where: High School
-      when: 2008 - 2009
-      what: 'Facilitated communications, organized meetings, and headed programming team.'
-    - who: Programming Competition Finalist
-      where: Canadian Computing Competition
-      when: Mar. 2009
-      what: 'National Bronze Medalist (top 20 in Canada) in the Canadian Computing Competition.'
-    - who: Programming Competition Champion
-      where: IBM CASCON Competition
-      when: Oct. 2008
-      what: 'Bot coded in Java attained first place in Toronto-area high school AI competition.' #[www-927.ibm.com/ibm/cas/cascon2008/hspc/results.html](https://www-927.ibm.com/ibm/cas/cascon2008/hspc/results.html)'
-    #- who: Peer Tutoring Club Lead Tutor
-      #where: High School
-      #when: 2008 - 2009
-      #what: ''
-    - who: Xbox Media Trade Show Presenter
-      where: X07, Toronto
-      when: Aug. 2007
-      what: 'Invited by Microsoft to present a video game developed using C# in XNA at X07 in Toronto. Was a hit with the blogs: [thebbps.com/articles/content/x07-warpong.html](http://www.thebbps.com/articles/content/x07-warpong.html)'
+    - employer: Queen Mary University of London
+      description: A global leading university with 4500 members of staff and more than 25000 students
+      title: Software Developer
+      location: London, UK
+      dates: November 2015 - Present
+      technologies: Java, PHP, Python, Shell Script, Linux, Windows, Docker, RaspberryPi
+      activities:
+          - create interfaces to integrate different systems using shell script, Python, Java, , APIs
+          - full-stack development of intranets, websites and web based systems coding at the front and back-end
+          - performance tunning of database views and queries
+      projects:
+          - Joint development of a system to manage the student-tutor history with the University of Loughborough using PHP and a home-made MVC framework
+          - Data synchronization between Research Grants Management System and the Financial using APIs
+          - Research Grants Managing System using PHP and Zend Framework
+          - Java command line to run queries based on XML DB catalog
+          - RaspberryPi with a RF Card Reader to collect attendance of NHS program students in offline (or almost) locations (Python and Linux       admin issues)
+          - Maintenance to a PHP Zend Framework intranet fixing bugs and creating new functions and reports
+          - Sync scripts to collect and update data between different systems reading and writing a wide range of formats (XML, JSON, web services      CSV, fixed length format files)
+          - Migrate websites from an external datacenter to an internal Docker environment
+          - Optimize database views (PostgreSQL, Oracle and MS-SQL)
+    - employer: Telium Networks
+      description: Telecom company specialized on corporate networks and datacenters
+      title: Lead Developer
+      location: Sao Paulo, Brazil
+      dates: November 2006 - August 2015
+      technologies: Linux, PHP, Python, JS, PostgreSQL, MySQL, MongoDB, Git
+      activities:
+          - system analysis, coding, testing, deploying
+          - manage the infrastructure of servers, network and databases
+          - be the interface between internal clients, the board of the company and the developers
+      projects:
+          - PostgreSQL databases migrations and upgrades
+          - Customer Control Panel (CodeIgniter and Laravel)
+          - Sales Pipeline (CodeIgniter and Laravel)
+          - Sales activities control (CodeIgniter)
+          - Incidents Managing System for Contact Center (Symfony)
+          - Automation of services life cycle (PHP)
+          - Updates on Billing System (PHP with Mojavi and CodeIgniter)
+          - DNS database modeling and migration from a legacy system
+          - Integration of Billing system with proprietary ERP Protheus
+          - Dashboards, reports and alerts to the board.
+          - Several migration of DNS, web and email servers.
+    - employer: IFX Networks
+      description:  Mutinational telecom company that invested a lot in Latin America in the early 2000's
+      title: Software Developer
+      location: Sao Paulo, Brazil
+      dates: December 2000 - June 2006
+      technologies: Linux, PHP, PostgreSQL, Oracle, MySQL and MS-SQL
+      activities:
+          - create the company intranet to be used over Latin America
+          - Help desk Tickets Management System
+          - Billing system to charge recurrent services and provide reports to finance team
+    - employer: Conex Internet Provider
+      description: The first internet provider the south of Brazil
+      title: Junior Developer
+      location: Porto Alegre, Brazil
+      dates: February 1997 - November 2000
+      technologies: Visual Basic, ASP, MS SQL, Windows Server, IIS
+      activities:
+          - the development websites that needed some dynamic behaviour
+          - web-servers administration
 
 education:
-    - degree: Candidate for Bachelor of Software Engineering
-      school: University of Waterloo
-      dates: 2009 - 2014 (expected)
-      description:
-        - 'Member of the VeloCity start-up incubator ([velocity.uwaterloo.ca](http://velocity.uwaterloo.ca)) for two terms'
-    - degree: High School Diploma
-      school: Western Technical-Commercial School, Toronto
-      dates: 2009
-      description:
-        - 'Enrolled in the gifted/enriched program; highest average in graduating class (97.5%)'
+    - degree: BSc in Computer Science
+      school: Universidade Paulista, UNIP
+      location: Sao Paulo, Brazil
+      period: 2001 - 2004
+      additional:
+          - school: Pontificia Universidade Catolica, PUCRS
+            location: Porto Alegre, Brazil
+            period: 1999 - 2000
+    - degree: Computer Networks Technician
+      school: Universidade Federal do Rio grande Sul, UFRGS
+      location: Porto Alegre, Brazil
+      period: 1997 - 1998
+    - degree: Data Processing Technician
+      school: Escola Tecnica Santo Inacio
+      location: Porto Alegre, Brazil
+      period: 1993 - 1996
 
-awards:
-    - "Math and Engineering Dean's Honour List for all terms, University of Waterloo"
-    - 'Engineering Faculty Entrance Scholarship, University of Waterloo'
-    - 'Queen Elizabeth II Aiming for the Top Scholarship'
-    - "Governor General's Academic Medal, Western Tech"
-    - 'Euclid Mathematics Contest School Champion, Western Tech'
-    - 'McCall Award for Computer Science and Engineering, Western Tech'
-    - 'Student Recognition Award, Western Tech'
+additional training:
+    - title: Java with Struts2
+      school: Pluralsight
+      year: 2015
+    - title: ITIL Foundations
+      school: ITXL, Brazil
+      year: 2014
+    - title: Training course PMP-PMI
+      schoo: Euax, Brazil
+      year: 2013
+    - title: Agile Software Development
+      school: University of Sao Paulo - USP, Brazil
+      year: 2008
+    - title: Ruby on Rails Conference
+      school: University of Sao Paulo - USP, Brazil
+      year: 2008
+    - title: Java teaching assistant
+      school: UNIP, Brazil
+      year: 2004
+    - title: MS SQL Server Administrator
+      school: Microsoft Education Partner, Brazil
+      year: 1999
 
-interests: 'Ping pong, biking, swimming, jogging, camping, reading, free food'
+languages:
+    - Portuguese: Native
+    - English: Fluent
+    - Spanish: Basic
 
-warning: 'This file was generated. See github.com/divad12/resume for source.'
+volunteering:
+  - title: Half Marathon in East London
+    description: Raised funds for multi-ethnical youth club in East London
+    year: 2015
+  - title: Summer Camps in Ireland
+    description: Sports lessons and recreational activities for children in community centers
+    year: 2008
+  - title: Summer Camps in Israel and Palestine
+    description: Gardening, sports lessons and recreational activities for children in summer camps
+    year: 2007
+  - title: Medical Trip Assistant in Cananeia, Brazil
+    description: Logistic support for medical assistance and recreational activities for children in risky areas
+    year: 2006
 
-# TODO:
-# - Improve README
-# - more details 2011 winter work term
-# - change current address
-# - fit onto two pages
-# - different HTML and LaTeX for special formatting
+other interests: 'Running, walking, reading'
 
+warning: 'This file was generated. See github.com/reis/resume for source.'
 
 ################################################################################
 # This resume was created using:
@@ -180,10 +154,3 @@ warning: 'This file was generated. See github.com/divad12/resume for source.'
 # - GNU Make for easy compilation
 # - Vim for editing all files
 # - Git for revision control, diff, backup, branching, etc.
-#
-# - HTML & CSS template soon to come
-#
-# Other places to edit:
-# - LinkedIn
-# - Google profiles
-# - Facebook

@@ -3,12 +3,12 @@ all: output/resume.pdf output/resume.txt
 files=output/resume.pdf resume.html output/resume.tex resume.yaml output/resume.txt
 
 # TODO: use rsync
-.PHONY: publish
-publish: output/resume.pdf resume.html
-	scp $(files) david:~/www/resume/
-	scp $(files) david:~/www/
-	scp $(files) dyhu@csclub.uwaterloo.ca:~/www/
-	cp output/resume.pdf submit/davidhu-resume.pdf
+#.PHONY: publish
+#publish: output/resume.pdf resume.html
+#	scp $(files) david:~/www/resume/
+#	scp $(files) david:~/www/
+#	scp $(files) dyhu@csclub.uwaterloo.ca:~/www/
+#	cp output/resume.pdf submit/davidhu-resume.pdf
 
 output/resume.pdf: output/resume.tex res.cls
 	pdflatex -interaction=batchmode -output-directory output $<

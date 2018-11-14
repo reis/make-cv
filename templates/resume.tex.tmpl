@@ -4,163 +4,173 @@ cheetahVarStartToken = &
 directiveStartToken = !
 #end compiler-settings
 
+\name{\textit{&contact.name}} 
+\address{&contact.location}
+\address{&contact.email}
+\address{Phone: &contact.phone}
+\address{Linkedin: &contact.linkedin}
+\address{Github: &contact.git}
+\address{Twitter: &contact.twitter}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % WARNING: &warning
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[margin,line]{res}
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
 
-\usepackage{color}
-\definecolor{linkcolor}{RGB}{58,110,180}
+\documentclass[margin]{res}
 
-% TODO: Printable target should not color links and should display full URLs
-% instead of \href
-\usepackage{hyperref}
-\hypersetup{
-  pdfborder={0 0 0 0},
-  colorlinks=true,
-  urlcolor=linkcolor
-}
+\usepackage{t1enc}  % allow accents
+\usepackage[utf8]{inputenc} 
 
-% Disable ligatures (messes with search in pdf files)
-% TODO: Add another make target (such as printable) that does not do this
-\usepackage{microtype}
-\DisableLigatures{encoding = *, family = * }
+\topmargin=-0.5in  % start text higher on the page
+\setlength{\textheight}{10in} % increase text height to fit resume on 1 page
+\begin{document}  
+\name{\textit{André Leite Reis \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\address{London, UK \\ 
+         andre.reis@gmail.com \\ 
+         Phone: +44 074 8210 1626 \\
+         Linkedin: linkedin.com/in/andreleitereis \\
+         Github: github.com/reis}
 
-% Change some fonts
-\renewcommand{\namefont}{\LARGE\emph}
-\renewcommand{\sectionfont}{\large\bf\sc}
-
-% Margins, spacing, etc.
-\topmargin -.3in
-\oddsidemargin -.5in
-\evensidemargin -.5in
-\textwidth=6.0in
-\textheight=9.6in
-\itemsep=0in
-\parsep=0in
-\pagestyle{plain}  % Do want page numbers
-
-\begin{document}
-\begin{sloppypar} % So long words will wrap to the next line instead of overflowing
-
-\name{&contact.name}
-\address{&contact.github\hspace{1cm}&contact.email}
-\break
 \begin{resume}
+\section{Summary} BSc in Computer Science, having expertise in software development, 
+                  data analysis and databases.
+                        
+                  20+ years of professional experience in IT working with different industries, 
+                  methodologies and technologies.
+                  
+                  Experienced in business operations like Billing, CRM, sales pipeline, 
+                  contact center management, e-commerce, provisioning data center services, 
+                  VoIP, telecommunications, higher education and research market.
 
-\section {Work Experience}
+\section{Skills Base}  
+  \textbf{Programming Languages}: \LaTeX , PHP, Python, JavaScript and Java;\\
+  \textbf{Data Science}: Strong SQL, PL/pgSQL, spreadsheets, plus some experiences with R;\\
+  \textbf{Operating Systems}:  Linux (Arch, Debian, Ubuntu, CentOS, Fedora), Windows and OSX;\\
+  \textbf{Networks}: Internet protocol suite, sockets, APIs, webservices; \\
+  \textbf{Virtualization}: VirtualBox, VMWare, Xen, Cloudstack, Vagrant, PuPHPet;\\
+                                  
 
-\begin{format}
-  \employer{l}\title{r}\\
-  \location{l}\dates{r}\\
-  \body\\
-\end{format}
+\section{Experience}
 
-!for &position in &work
-    \employer{\textbf{&position.employer}}
-    \title{&position.title}
-    \location{&position.location}
-    \dates{&position.dates}
-    \begin{position}
-        \vspace{-.3cm}
-        !if &position.description
-            \begin{itemize}
-            !for &point in &position.description
-                \item &point
-            !end for
-            \end{itemize}
-        !else
-            \vspace{-.2cm}
-        !end if
-    \end{position}
-!end for
+\vspace{-0.1in}
+   \begin{tabbing}
+   \hspace{2.3in}\= \hspace{1.7in}\= \kill % set up two tab positions
+    \textbf{Queen Mary University of London}    \>\>\textbf{Nov 2015 - Present}\\
+    \textit{Software Developer}\\ \\       
+    \textbf{Technologies}: Java, PHP, Python, Shell Script, Linux, Windows, Docker, RaspberryPi;
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+    \vspace{2mm}
+    I maintain and develop systems coding the front and back-end and new `interfaces` to integrate different systems. 
 
+    Projects:
+    \begin{itemize}
+      \item Joint development with the University of Loughborough to develop a PHP web system (front and back-end)
+      \item Python back-end interface between a commercial RGMS (Research Grant Management System)) and the financial system using APIs
+      \item Research Grants Managing System using PHP and Zend Framework
+      \item Command line based Java tool to execute databases queries reading a XML data sources catalog
+      \item Raspberry Pi with a RF Card Reader to collect attendance of NHS program students in offline locations (Python and Shell Script)
+      \item Maintenance to a PHP Zend Framework intranet fixing bugs and creating new functions and reports
+      \item Sync scripts to collect and update data between different systems reading and writing a wide range of formats (XML, JSON, web services, CSV, fixed length format files)
+      \item Migrate websites from an external data-center to an internal Docker environment
+      \item Optimize database views (PostgreSQL, Oracle and MS SQL Server)
+    \end{itemize}
 
-\section{Other Projects}
-\begin{itemize}
-!for &item in &projects
-    \item &item
-!end for
-\end{itemize}
-
-
-\section {University Activities}
-
-\begin{format}
-  \title{l}\location{r}\\
-  \body\\
-\end{format}
-
-!for &activity in &university
-    \title{\textbf{&activity.who}}
-    \location{&activity.when}
-    \begin{position}
-        !if &activity.what
-            &activity.what
-        !else
-            \vspace{-0.5cm}
-        !end if
-    \end{position}
-!end for
+\vspace{5.0in}
 
 
-\section {High School Activities}
 
-!for &activity in &highSchool
-    \title{\textbf{&activity.who}}
-    \location{&activity.when}
-    \begin{position}
-        !if &activity.what
-            &activity.what
-        !else
-            \vspace{-0.5cm}
-        !end if
-    \end{position}
-!end for
+\vspace{-0.1in}
+   \begin{tabbing}
+   \hspace{2.3in}\= \hspace{1.7in}\= \kill % set up two tab positions
+    \textbf{Telium Networks}    \>\>\textbf{Jul 2006 - Aug 2015}\\
+    \textit{Senior Software Developer} \\ \\        
+    \textbf{Technologies}: Linux, PHP, Python, JS, PostgreSQL, MySQL, MongoDB, Git;
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+    \vspace{2mm}
+    My main role here is team leader on system analysis, writing code, testing and deploying process. I write a lot of code everyday but also attend to meetings with internal clients and lead daily stand up meetings with the all developers.
 
+    Projects:
+    \begin{itemize}
+      \item Databases migrations changing encoding and PostgreSQL versions.
+      \item Customer Control Panel (v1 CodeIgniter and v2 Laravel/Eloquent/Bootstrap).
+      \item Sales Pipeline (v1 Code Igniter, PL/pgSQL, v2 Laravel/Eloquent/Bootstrap).
+      \item Sales activities control (CodeIgniter).
+      \item Event System for Contact Center (Symfony/Doctrine/ExtJS).
+      \item Automation of services life-cycle (PHP).
+      \item Updates on Billing System (Mojavi, Code Igniter).
+      \item DNS database modeling and migration from a legacy system.
+      \item Integration of Billing system with proprietary ERP Protheus.
+      \item Dashboards, reports and alerts to the board.
+      \item Several migration of DNS, web and email servers.
+    \end{itemize}
 
-\section{Education}
+In my spare time I like to study about programming languages such as Java, Ruby, Node.js, Python for data science and R.
 
-\begin{format}
-  \title{l}\\
-  \location{l}\dates{r}\\
-  \body\\
-\end{format}
+\vspace{-0.1in}
 
-!for &school in &education
-    \title{\textbf{&school.degree}}
-    \dates{&school.dates}
-    \location{&school.school}
-    \begin{position}
-        \vspace{-.3cm}
-        !if &school.description
-            \begin{itemize}
-            !for &point in &school.description
-                \item &point
-            !end for
-            \end{itemize}
-        !else
-            \vspace{-.2cm}
-        !end if
-    \end{position}
-!end for
+\vspace{-0.1in}
+   \begin{tabbing}
+   \hspace{2.3in}\= \hspace{1.7in}\= \kill % set up two tab positions
+    \textbf{IFX}    \>\>\textbf{Dec 2000 - Jun 2006}\\
+    \textit{Software Developer} \\ \\  
+    \textbf{Technologies}: Linux, PHP, PostgreSQL, Oracle, MySQL and MS SQL;
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+    \vspace{2mm}
+        Member of a team responsible to design and develop the intranet for the whole company over latin america. 
+        It had to be a multi language, region with a complex permission system. It was also divided in modules and I was responsible for trouble tickets.
+        Among other activities and projects, I attended a project to develop a billing system to charge recurrent services applying several business rules.
+\vspace{-0.1in}
 
+   \begin{tabbing}
+   \hspace{2.3in}\= \hspace{1.7in}\= \kill % set up two tab positions
+    \textbf{Conex Internet Provider}    \>\>\textbf{Feb 1997 - Nov 2000}\\
+    \textit{Junior Developer}\\ \\       
+    \textbf{Technologies}: Visual Basic, ASP, MS SQL, Windows Server, IIS;
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+    \vspace{2mm}
+      Dynamic websites development and web-server adminstration.  
 
-\section{Awards}
-\begin{itemize}
-    !for &award in &awards
-        \item &award
-    !end for
-\end{itemize}
+\section{Education}	
+      \textit{BSc in Computer Science} \\
+            2001-2004 at Universidade Paulista, São Paulo, Brazil \\
+            1999-2000 at Pontifícia Universidade Católica PUCRS, Porto Alegre, Brazil
+      
+      \textit{Computer Networks Technician} \\ 
+            1997-1998 at Universidade Federal do Rio Grande do Sul, Porto Alegre, Brazil
+      
+      \textit{Data Processing Technician} \\
+            1993-1996 at Escola Técnica Santo Inácio, Porto Alegre, Brazil
+  
+\section{Languages} 
+  \begin{itemize}
+    \vspace{2mm}
+      \item \textbf{Portuguese}: Native
+      \item \textbf{English}: Fluent
+      \item \textbf{Spanish}: Basic
+  \end{itemize}      
 
+\section{Additional Training}
+  \begin{itemize}
+    \vspace{2mm}
+      \item \textbf{ITIL}: ITIL Foundations (ITXL)
+      \item \textbf{PMI}: Training course PMP-PMI (Euax)
+      \item \textbf{Agile}: Agile Software Development (IME-USP)
+      \item \textbf{Ruby on Rails}: RejectCode Ruby on Rails (IME-USP)
+      \item \textbf{Java}: Java Course monitoring (UNIP)
+      \item \textbf{MS SQL}: MS SQL Server Administrator (Microsoft Education Partner)
+  \end{itemize}      
+  
+\section{Volunteering}
+	\begin{itemize}
+    \vspace{2mm}
+      \item \textbf{East London}: Raising money for multi-ethnical youth clubs running The Big Half Race
+		  \item \textbf{Ireland}: Sports lessons and recreation activities for children in a community center.\vspace{1mm}
+		  \item \textbf{Israel and Palestine}: Gardening, sports lessons and recreation activities for children in summer camps.\vspace{1mm}
+		  \item \textbf{Cananéia, Brazil}: Logistic support for medical assistance and sports lessons and recreation activities for children in risky areas.
+	\end{itemize}
 
-\section{Interests}
-&interests
-
-
-\vfill
-
-\end{resume}
-\end{sloppypar}
+\end{resume} 
 \end{document}

@@ -791,7 +791,7 @@
 \parsep 2pt plus 2pt
 \itemsep \parsep}
 
-\pagestyle{empty}  % don't want page numbers
+\pagestyle{plain}  % don't want page numbers: empty
 
 \begin{format}
 \title{l}\employer{r}\\

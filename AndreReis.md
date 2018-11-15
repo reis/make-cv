@@ -94,14 +94,14 @@ twitter.com/mrkings
 ## Education
 
 - **BSc in Computer Science**
-  - 2001 - 2004 _Universidade Paulista, UNIP_ at Sao Paulo, Brazil
-  - 1999 - 2000 _Pontificia Universidade Catolica, PUCRS_ at Porto Alegre, Brazil
+  - 2001 - 2004 _Universidade Paulista, UNIP_ in Sao Paulo, Brazil
+  - 1999 - 2000 _Pontificia Universidade Catolica, PUCRS_ in Porto Alegre, Brazil
 
 - **Computer Networks Technician**
-  - 1997 - 1998 _Universidade Federal do Rio grande Sul, UFRGS_ at Porto Alegre, Brazil
+  - 1997 - 1998 _Universidade Federal do Rio grande Sul, UFRGS_ in Porto Alegre, Brazil
 
 - **Data Processing Technician**
-  - 1993 - 1996 _Escola Tecnica Santo Inacio_ at Porto Alegre, Brazil
+  - 1993 - 1996 _Escola Tecnica Santo Inacio_ in Porto Alegre, Brazil
 
 
 ## Additional  Training

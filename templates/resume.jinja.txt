@@ -45,7 +45,7 @@ Education
 \BLOCK{for degree, schools in education.items()}
     \VAR{degree} 
     \BLOCK{for school in schools}
-    \VAR{school.dates} \VAR{school.school} at \VAR{school.location}
+    \VAR{school.dates} \VAR{school.school} in \VAR{school.location}
     \BLOCK{endfor}
     
 \BLOCK{endfor}

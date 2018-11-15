@@ -1,17 +1,17 @@
-all: output/resume.pdf
+all: resume.pdf
 
-files=output/resume.pdf output/resume.tex resume.yaml output/resume.txt
+files=resume.pdf resume.tex resume.yaml
 
-output/resume.pdf: output/resume.tex res.cls
-	pdflatex -interaction=batchmode -output-directory output $<
+resume.pdf: resume.tex res.cls
+	pdflatex $<
 
-output/resume.tex: templates/resume.tex.tmpl resume.yaml genresumes.py
-	./genresumes.py tex
+resume.tex: templates/resume.jinja.tex resume.yaml make.py
+	./make.py tex
 
-#output/resume.txt: templates/resume.txt.tmpl resume.yaml genresumes.py
-#	./genresumes.py txt
+#resume.txt: templates/resume.txt.tmpl resume.yaml genresumes.py
+#	./make.py txt
 
 .PHONY: clean
 clean:
-	rm -rf output
+	rm -f *.log
 	rm -f *.pyc

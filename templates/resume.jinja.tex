@@ -1,0 +1,95 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% WARNING: &warning
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass[margin]{res}
+
+%\usepackage{t1enc}  % allow accents
+%\usepackage[utf8]{inputenc} 
+
+\topmargin=-0.5in  % start text higher on the page
+\setlength{\textheight}{11in} % increase text height to fit resume on 1 page
+\begin{document}
+\fontsize{9}{12}
+\selectfont
+%\name{\textbf{;contact.name}} 
+\address{\textbf{\VAR{contact.name}} \\
+         \VAR{contact.location} \\
+         \VAR{contact.email} \\
+         \VAR{contact.phone} \\
+         \VAR{contact.linkedin} \\
+         \VAR{contact.github} \\
+         \VAR{contact.twitter} }
+
+\begin{resume}
+\section{Summary}
+\BLOCK{for item in summary}
+    \VAR{item} \\
+\BLOCK{endfor}
+
+\section{Skills Base}
+\BLOCK{for key, value in skills.items()}
+    \textbf{\VAR{key}}: \textit{\VAR{value}} \\
+\BLOCK{endfor}
+
+\section{Experience}
+\BLOCK{for job in work}
+  \textbf{\VAR{job.employer}} \hfill \textbf{\VAR{job.dates}}\\
+  \textit{\VAR{job.title}} \hfill \textit{\VAR{job.location}}\\
+  \begin{description}
+    \item{\textbf{Description}: \textit{\VAR{job.description}}}
+    \item{\textbf{Technologies}: \textit{\VAR{job.technologies}}}
+    \item{
+      \textbf{Activities}:
+      \begin{itemize}
+      \BLOCK{for item in job.activities}
+        \item{\textit{\VAR{item}}}
+      \BLOCK{endfor}
+      \end{itemize}
+    }
+    \BLOCK{if job.projects}
+    \item{
+      \textbf{Projects}:
+      \begin{itemize}
+      \BLOCK{for item in job.projects}
+        \item{\textit{\VAR{item}}}
+      \BLOCK{endfor}
+      \end{itemize}
+    }
+    \BLOCK{endif}
+  \end{description}
+  \BLOCK{if 'pagebreak' in job}
+  \pagebreak
+  \BLOCK{endif}
+\BLOCK{endfor}
+
+\pagebreak
+\section{Education}
+\BLOCK{for degree, schools in education.items()}
+    \textbf{\VAR{degree}} \\
+    \BLOCK{for school in schools}
+      \VAR{school.dates} at \textit{\VAR{school.school}} \hfill \VAR{school.location} \\
+    \BLOCK{endfor}
+    \\
+\BLOCK{endfor}
+
+\section{Additional \\ Training}
+\BLOCK{for course in training}
+    \VAR{course.year} \textit{\VAR{course.title}} at \VAR{course.school} \\
+\BLOCK{endfor}
+
+\section{Languages} 
+\BLOCK{for key, value in languages.items()}
+    \textbf{\VAR{key}}: \textit{\VAR{value}} \\
+\BLOCK{endfor}
+
+\section{Volunteering}
+\BLOCK{for action in volunteering}
+    \VAR{action.year} \textit{\VAR{action.title}}: {\VAR{action.description}} \\
+\BLOCK{endfor}
+
+\end{resume} 
+\end{document}

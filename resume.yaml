@@ -13,19 +13,20 @@ summary:
     - Experienced in business operations like Billing, CRM, sales pipeline, contact center management, e-commerce, provisioning data center services, VoIP, telecommunications, higher education and research market
 
 skills:
-  Operating Systems: 'Linux (Arch, Debian, Ubuntu, CentOS, Fedora), Windows and OSX'
-  Networks: 'Internet suite, Sockets, APIs, Webservices'
-  Programming Languages: 'PHP, Python, Shell Script, Java, JavaScript'
-  Databases and Data Science: 'PostgreSQL, Oracle, MS-SQL, PL/pgSQL, Python and R'
-  Virtualization: 'VirtualBox, VMWare, Xen, Cloudstack, Docker, Vagrant'
+  Operating Systems: Linux (Arch, Debian, Ubuntu, CentOS, Fedora), Windows and OSX
+  Networks: Internet suite, Sockets, APIs, Webservices
+  Programming Languages: \LaTeX, PHP, Python, Shell Script, Java, JavaScript
+  Databases and Data Science: PostgreSQL, Oracle, MS-SQL, PL/pgSQL, Python and R
+  Virtualization: VirtualBox, VMWare, Xen, Cloudstack, Docker, Vagrant
 
 work:
     - employer: Queen Mary University of London
-      description: A global leading university with 4500 members of staff and more than 25000 students
+      description: A leading university with 4500 employees and more than 25000 students
       title: Software Developer
       location: London, UK
       dates: November 2015 - Present
       technologies: Java, PHP, Python, Shell Script, Linux, Windows, Docker, RaspberryPi
+      pagebreak: true
       activities:
           - create interfaces between systems using shell script, Python, Java, APIs
           - full-stack development of intranets, websites
@@ -51,7 +52,7 @@ work:
           - manage the infrastructure of servers, network and databases
           - be the interface between internal clients, the board of the company and the developers
       projects:
-          - PostgreSQL databases migrations and upgrades
+          - Databases migrations and upgrades
           - Customer Control Panel (CodeIgniter and Laravel)
           - Sales Pipeline (CodeIgniter and Laravel)
           - Sales activities control (CodeIgniter)
@@ -61,9 +62,8 @@ work:
           - DNS database modeling and migration from a legacy system
           - Integration of Billing system with proprietary ERP Protheus
           - Dashboards, reports and alerts to the board.
-          - Several migration of DNS, web and email servers.
     - employer: IFX Networks
-      description:  Mutinational telecom company that invested a lot in Latin America in the early 2000's
+      description:  Mutinational telecom company focused on Latin America
       title: Software Developer
       location: Sao Paulo, Brazil
       dates: December 2000 - June 2006
@@ -72,17 +72,17 @@ work:
           - create the company intranet to be used over Latin America
           - Help desk Tickets Management System
           - Billing system to charge recurrent services and provide reports to finance team
-      projects:
+      projects: null
     - employer: Conex Internet Provider
-      description: The first internet provider the south of Brazil
+      description: The first internet provider in the south of Brazil
       title: Junior Developer
       location: Porto Alegre, Brazil
       dates: February 1997 - November 2000
       technologies: Visual Basic, ASP, MS SQL, Windows Server, IIS
       activities:
-          - the development websites that needed some dynamic behaviour
-          - web-servers administration
-      projects:
+          - develop websites that needed some dynamic behaviour
+          - IIS web-servers administration
+      projects: null
 
 education:
     BSc in Computer Science:
@@ -133,17 +133,17 @@ languages:
     Spanish: Basic
 
 volunteering:
-  - title: Half Marathon in East London
+  - title: Half Marathon
     description: Raised funds for multi-ethnical youth club in East London
     year: 2015
   - title: Summer Camps in Ireland
-    description: Sports lessons and recreational activities for children in community centers
+    description: Sports and recreational activities in community centers
     year: 2008
   - title: Summer Camps in Israel and Palestine
-    description: Gardening, sports lessons and recreational activities for children in summer camps
+    description: Maintenance, sports and recreational activities in risky areas
     year: 2007
   - title: Medical Trip Assistant in Cananeia, Brazil
-    description: Logistic support for medical assistance and recreational activities for children in risky areas
+    description: Logistic support and recreational activities in risky areas
     year: 2006
 
 other interests: 'Running, walking, reading'

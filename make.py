@@ -22,8 +22,8 @@ def get_cmd_line_args():
         help="Output directory of generated files. Defaults to output/")
 
     parser.add_option("-s", "--source",
-        default='resume.yaml',
-        help="Filename of the resume YAML source. Defaults to resume.yaml")
+        default='RESUME.yaml',
+        help="Filename of the resume YAML source. Defaults to RESUME.yaml")
 
     parser.add_option("-t", "--template",
         default='resume.jinja.%s',

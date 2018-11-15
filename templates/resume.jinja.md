@@ -1,10 +1,11 @@
 # \VAR{contact.name}
-\VAR{contact.location}
-\VAR{contact.email}
-\VAR{contact.phone}
-\VAR{contact.linkedin}
-\VAR{contact.github}
-\VAR{contact.twitter}
+
+- \VAR{contact.location}
+- \VAR{contact.phone}
+- [\VAR{contact.email}](mailto:\VAR{contact.email})
+- [\VAR{contact.linkedin}](https://\VAR{contact.linkedin})
+- [\VAR{contact.github}](https://\VAR{contact.github})
+- [\VAR{contact.twitter}](https://\VAR{contact.twitter})
 
 ## Summary
 

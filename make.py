@@ -18,7 +18,7 @@ def get_cmd_line_args():
                     "generate resume of the given <extension> format.")
 
     parser.add_option("-o", "--output_dir",
-        default='.',
+        default='output/',
         help="Output directory of generated files. Defaults to output/")
 
     parser.add_option("-s", "--source",

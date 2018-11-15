@@ -1,10 +1,11 @@
 # ANDRE LEITE REIS
-London, UK
-andre.reis@gmail.com
-+44 074 8210 1626
-linkedin.com/in/andreleitereis
-github.com/reis
-twitter.com/mrkings
+
+- London, UK
+- +44 074 8210 1626
+- [andre.reis@gmail.com](mailto:andre.reis@gmail.com)
+- [linkedin.com/in/andreleitereis](https://linkedin.com/in/andreleitereis)
+- [github.com/reis](https://github.com/reis)
+- [twitter.com/mrkings](https://twitter.com/mrkings)
 
 ## Summary
 

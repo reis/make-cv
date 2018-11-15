@@ -154,7 +154,7 @@ warning: 'This file was generated. See github.com/reis/resume for source.'
 # This resume was created using:
 # - YAML source (this file) - for the resume content
 # - LaTeX template - for presentation and layout
-# - Python script and Cheetah (templating engine) for compiling together the
+# - Python script and Jinja2 (templating engine) for compiling together the
 #   YAML and LaTeX
 # - pdflatex for .tex --> .pdf
 # - GNU Make for easy compilation

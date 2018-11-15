@@ -15,7 +15,7 @@ output/resume.txt: templates/resume.jinja.txt RESUME.yaml make.py
 	./make.py txt
 
 output/resume.json: RESUME.yaml
-	python -c 'import sys, yaml, json; json.dump(yaml.load(sys.stdin), sys.stdout, indent=4)' < RESUME.yaml > output/resume.json
+	yaml2json RESUME.yaml output/resume.json
 
 .PHONY: clean
 clean:

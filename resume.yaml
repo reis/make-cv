@@ -1,22 +1,23 @@
 contact:
     location: London, UK
-    name: Andre Leite Reis
-    email: '[andre.reis@gmail.com](mailto:anndre.reis@gmail.com)'
-    github: '[github.com/reis](https://github.com/reis)'
-    linkedin: '[linkedin.com/in/andreleitereis](https://linkedin.com/in/andreleitereis)'
-    twitter: '[twitter.com/mrkings](https://twitter.com/mrkings)'
+    name: ANDRE LEITE REIS
+    phone: +44 074 8210 1626
+    email: andre.reis@gmail.com
+    github: github.com/reis
+    linkedin: linkedin.com/in/andreleitereis
+    twitter: twitter.com/mrkings
     
 summary:
     - BS in Computer Science, having expertise in software development, data analysis and databases
-    - 20+ years of professional experience in IT working in different industries, using different methodologies and technologies'
-    - Experienced in business operations like Billing, CRM, sales pipeline, contact center management, e-commerce, provisioning data center services, VoIP, telecommunications, higher education and research market'
+    - 20+ years of professional experience in IT working with many industries, methodologies and technologies
+    - Experienced in business operations like Billing, CRM, sales pipeline, contact center management, e-commerce, provisioning data center services, VoIP, telecommunications, higher education and research market
 
 skills:
-    - Operating Systems: Linux (Arch, Debian, Ubuntu, CentOS, Fedora), Windows and OSX
-    - Networks: Internet suite, Sockets, APIs, Webservices
-    - Programming Languages: PHP, Python, Shell Script, Java, JavaScript
-    - Databases and Data Science: PostgreSQL, Oracle, MS-SQL, PL/pgSQL, Python and R
-    - Virtualization: VirtualBox, VMWare, Xen, Cloudstack, Docker, Vagrant
+  Operating Systems: 'Linux (Arch, Debian, Ubuntu, CentOS, Fedora), Windows and OSX'
+  Networks: 'Internet suite, Sockets, APIs, Webservices'
+  Programming Languages: 'PHP, Python, Shell Script, Java, JavaScript'
+  Databases and Data Science: 'PostgreSQL, Oracle, MS-SQL, PL/pgSQL, Python and R'
+  Virtualization: 'VirtualBox, VMWare, Xen, Cloudstack, Docker, Vagrant'
 
 work:
     - employer: Queen Mary University of London
@@ -26,8 +27,8 @@ work:
       dates: November 2015 - Present
       technologies: Java, PHP, Python, Shell Script, Linux, Windows, Docker, RaspberryPi
       activities:
-          - create interfaces to integrate different systems using shell script, Python, Java, , APIs
-          - full-stack development of intranets, websites and web based systems coding at the front and back-end
+          - create interfaces between systems using shell script, Python, Java, APIs
+          - full-stack development of intranets, websites
           - performance tunning of database views and queries
       projects:
           - Joint development of a system to manage the student-tutor history with the University of Loughborough using PHP and a home-made MVC framework
@@ -71,6 +72,7 @@ work:
           - create the company intranet to be used over Latin America
           - Help desk Tickets Management System
           - Billing system to charge recurrent services and provide reports to finance team
+      projects:
     - employer: Conex Internet Provider
       description: The first internet provider the south of Brazil
       title: Junior Developer
@@ -80,26 +82,29 @@ work:
       activities:
           - the development websites that needed some dynamic behaviour
           - web-servers administration
+      projects:
 
 education:
-    - degree: BSc in Computer Science
-      school: Universidade Paulista, UNIP
-      location: Sao Paulo, Brazil
-      period: 2001 - 2004
-      additional:
-          - school: Pontificia Universidade Catolica, PUCRS
-            location: Porto Alegre, Brazil
-            period: 1999 - 2000
-    - degree: Computer Networks Technician
-      school: Universidade Federal do Rio grande Sul, UFRGS
-      location: Porto Alegre, Brazil
-      period: 1997 - 1998
-    - degree: Data Processing Technician
-      school: Escola Tecnica Santo Inacio
-      location: Porto Alegre, Brazil
-      period: 1993 - 1996
+    BSc in Computer Science:
+      - school: Universidade Paulista, UNIP
+        location: Sao Paulo, Brazil
+        dates: 2001 - 2004
+      - school: Pontificia Universidade Catolica, PUCRS
+        location: Porto Alegre, Brazil
+        dates: 1999 - 2000
+    Computer Networks Technician:
+      - school: Universidade Federal do Rio grande Sul, UFRGS
+        location: Porto Alegre, Brazil
+        dates: 1997 - 1998
+    Data Processing Technician:
+      - school: Escola Tecnica Santo Inacio
+        location: Porto Alegre, Brazil
+        dates: 1993 - 1996
 
-additional training:
+training:
+    - title: Developing APIs
+      school: Mulesoft
+      year: 2018
     - title: Java with Struts2
       school: Pluralsight
       year: 2015
@@ -107,7 +112,7 @@ additional training:
       school: ITXL, Brazil
       year: 2014
     - title: Training course PMP-PMI
-      schoo: Euax, Brazil
+      school: Euax, Brazil
       year: 2013
     - title: Agile Software Development
       school: University of Sao Paulo - USP, Brazil
@@ -123,9 +128,9 @@ additional training:
       year: 1999
 
 languages:
-    - Portuguese: Native
-    - English: Fluent
-    - Spanish: Basic
+    Portuguese: Native
+    English: Fluent
+    Spanish: Basic
 
 volunteering:
   - title: Half Marathon in East London

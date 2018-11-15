@@ -1,16 +1,8 @@
 ## Change delimiters for Cheetah
 #compiler-settings
-cheetahVarStartToken = &
+cheetahVarStartToken = ;
 directiveStartToken = !
 #end compiler-settings
-
-\name{\textit{&contact.name}} 
-\address{&contact.location}
-\address{&contact.email}
-\address{Phone: &contact.phone}
-\address{Linkedin: &contact.linkedin}
-\address{Github: &contact.git}
-\address{Twitter: &contact.twitter}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % WARNING: &warning
@@ -21,156 +13,85 @@ directiveStartToken = !
 
 \documentclass[margin]{res}
 
-\usepackage{t1enc}  % allow accents
-\usepackage[utf8]{inputenc} 
+%\usepackage{t1enc}  % allow accents
+%\usepackage[utf8]{inputenc} 
 
 \topmargin=-0.5in  % start text higher on the page
-\setlength{\textheight}{10in} % increase text height to fit resume on 1 page
-\begin{document}  
-\name{\textit{André Leite Reis \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
-\address{London, UK \\ 
-         andre.reis@gmail.com \\ 
-         Phone: +44 074 8210 1626 \\
-         Linkedin: linkedin.com/in/andreleitereis \\
-         Github: github.com/reis}
+\setlength{\textheight}{11in} % increase text height to fit resume on 1 page
+\small\begin{document}
+%\name{\textbf{;contact.name}} 
+\address{\textbf{;contact.name} \\
+         ;contact.location \\
+         ;contact.email \\
+         ;contact.phone \\
+         ;contact.linkedin \\
+         ;contact.github \\
+         ;contact.twitter }
 
 \begin{resume}
-\section{Summary} BSc in Computer Science, having expertise in software development, 
-                  data analysis and databases.
-                        
-                  20+ years of professional experience in IT working with different industries, 
-                  methodologies and technologies.
-                  
-                  Experienced in business operations like Billing, CRM, sales pipeline, 
-                  contact center management, e-commerce, provisioning data center services, 
-                  VoIP, telecommunications, higher education and research market.
+\section{Summary}
+!for ;item in ;summary
+    ;item \\
+!end for
 
-\section{Skills Base}  
-  \textbf{Programming Languages}: \LaTeX , PHP, Python, JavaScript and Java;\\
-  \textbf{Data Science}: Strong SQL, PL/pgSQL, spreadsheets, plus some experiences with R;\\
-  \textbf{Operating Systems}:  Linux (Arch, Debian, Ubuntu, CentOS, Fedora), Windows and OSX;\\
-  \textbf{Networks}: Internet protocol suite, sockets, APIs, webservices; \\
-  \textbf{Virtualization}: VirtualBox, VMWare, Xen, Cloudstack, Vagrant, PuPHPet;\\
-                                  
+\section{Skills Base}
+!for ;key, ;value in ;skills.items()
+    \textbf{;key}: \textit{;value} \\
+!end for
 
 \section{Experience}
+!for ;job in ;work
+  \textbf{;job.employer} \hfill \textbf{;job.dates}\\
+  \textit{;job.title} \hfill \textit{;job.location}\\
+  \begin{description}
+    \item{\textbf{Description}: \textit{;job.description}}
+    \item{\textbf{Technologies}: \textit{;job.technologies}}
+    \item{
+      \textbf{Activities}:
+      \begin{itemize}
+      !for ;item in ;job.activities
+        \item{\textit{;item}}
+      !end for
+      \end{itemize}
+    }
+    !if ;job.projects != "None"
+    \item{
+      \textbf{Projects}:
+      \begin{itemize}
+      !for ;item in ;job.projects
+        \item{\textit{;item}}
+      !end for
+      \end{itemize}
+    }
+    !end if
+  \end{description}
 
-\vspace{-0.1in}
-   \begin{tabbing}
-   \hspace{2.3in}\= \hspace{1.7in}\= \kill % set up two tab positions
-    \textbf{Queen Mary University of London}    \>\>\textbf{Nov 2015 - Present}\\
-    \textit{Software Developer}\\ \\       
-    \textbf{Technologies}: Java, PHP, Python, Shell Script, Linux, Windows, Docker, RaspberryPi;
-   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-    \vspace{2mm}
-    I maintain and develop systems coding the front and back-end and new `interfaces` to integrate different systems. 
+!end for
 
-    Projects:
-    \begin{itemize}
-      \item Joint development with the University of Loughborough to develop a PHP web system (front and back-end)
-      \item Python back-end interface between a commercial RGMS (Research Grant Management System)) and the financial system using APIs
-      \item Research Grants Managing System using PHP and Zend Framework
-      \item Command line based Java tool to execute databases queries reading a XML data sources catalog
-      \item Raspberry Pi with a RF Card Reader to collect attendance of NHS program students in offline locations (Python and Shell Script)
-      \item Maintenance to a PHP Zend Framework intranet fixing bugs and creating new functions and reports
-      \item Sync scripts to collect and update data between different systems reading and writing a wide range of formats (XML, JSON, web services, CSV, fixed length format files)
-      \item Migrate websites from an external data-center to an internal Docker environment
-      \item Optimize database views (PostgreSQL, Oracle and MS SQL Server)
-    \end{itemize}
-
-\vspace{5.0in}
-
-
-
-\vspace{-0.1in}
-   \begin{tabbing}
-   \hspace{2.3in}\= \hspace{1.7in}\= \kill % set up two tab positions
-    \textbf{Telium Networks}    \>\>\textbf{Jul 2006 - Aug 2015}\\
-    \textit{Senior Software Developer} \\ \\        
-    \textbf{Technologies}: Linux, PHP, Python, JS, PostgreSQL, MySQL, MongoDB, Git;
-   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-    \vspace{2mm}
-    My main role here is team leader on system analysis, writing code, testing and deploying process. I write a lot of code everyday but also attend to meetings with internal clients and lead daily stand up meetings with the all developers.
-
-    Projects:
-    \begin{itemize}
-      \item Databases migrations changing encoding and PostgreSQL versions.
-      \item Customer Control Panel (v1 CodeIgniter and v2 Laravel/Eloquent/Bootstrap).
-      \item Sales Pipeline (v1 Code Igniter, PL/pgSQL, v2 Laravel/Eloquent/Bootstrap).
-      \item Sales activities control (CodeIgniter).
-      \item Event System for Contact Center (Symfony/Doctrine/ExtJS).
-      \item Automation of services life-cycle (PHP).
-      \item Updates on Billing System (Mojavi, Code Igniter).
-      \item DNS database modeling and migration from a legacy system.
-      \item Integration of Billing system with proprietary ERP Protheus.
-      \item Dashboards, reports and alerts to the board.
-      \item Several migration of DNS, web and email servers.
-    \end{itemize}
-
-In my spare time I like to study about programming languages such as Java, Ruby, Node.js, Python for data science and R.
-
-\vspace{-0.1in}
-
-\vspace{-0.1in}
-   \begin{tabbing}
-   \hspace{2.3in}\= \hspace{1.7in}\= \kill % set up two tab positions
-    \textbf{IFX}    \>\>\textbf{Dec 2000 - Jun 2006}\\
-    \textit{Software Developer} \\ \\  
-    \textbf{Technologies}: Linux, PHP, PostgreSQL, Oracle, MySQL and MS SQL;
-   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-    \vspace{2mm}
-        Member of a team responsible to design and develop the intranet for the whole company over latin america. 
-        It had to be a multi language, region with a complex permission system. It was also divided in modules and I was responsible for trouble tickets.
-        Among other activities and projects, I attended a project to develop a billing system to charge recurrent services applying several business rules.
-\vspace{-0.1in}
-
-   \begin{tabbing}
-   \hspace{2.3in}\= \hspace{1.7in}\= \kill % set up two tab positions
-    \textbf{Conex Internet Provider}    \>\>\textbf{Feb 1997 - Nov 2000}\\
-    \textit{Junior Developer}\\ \\       
-    \textbf{Technologies}: Visual Basic, ASP, MS SQL, Windows Server, IIS;
-   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-    \vspace{2mm}
-      Dynamic websites development and web-server adminstration.  
-
-\section{Education}	
-      \textit{BSc in Computer Science} \\
-            2001-2004 at Universidade Paulista, São Paulo, Brazil \\
-            1999-2000 at Pontifícia Universidade Católica PUCRS, Porto Alegre, Brazil
-      
-      \textit{Computer Networks Technician} \\ 
-            1997-1998 at Universidade Federal do Rio Grande do Sul, Porto Alegre, Brazil
-      
-      \textit{Data Processing Technician} \\
-            1993-1996 at Escola Técnica Santo Inácio, Porto Alegre, Brazil
-  
-\section{Languages} 
-  \begin{itemize}
-    \vspace{2mm}
-      \item \textbf{Portuguese}: Native
-      \item \textbf{English}: Fluent
-      \item \textbf{Spanish}: Basic
-  \end{itemize}      
+\pagebreak
+\section{Education}
+!for ;degree, ;schools in ;education.items()
+    \textit{;degree} \\
+    !for ;school in ;schools
+      ;school.dates at {;school.school} \hfill {;school.location} \\
+    !end for
+    \\
+!end for
 
 \section{Additional Training}
-  \begin{itemize}
-    \vspace{2mm}
-      \item \textbf{ITIL}: ITIL Foundations (ITXL)
-      \item \textbf{PMI}: Training course PMP-PMI (Euax)
-      \item \textbf{Agile}: Agile Software Development (IME-USP)
-      \item \textbf{Ruby on Rails}: RejectCode Ruby on Rails (IME-USP)
-      \item \textbf{Java}: Java Course monitoring (UNIP)
-      \item \textbf{MS SQL}: MS SQL Server Administrator (Microsoft Education Partner)
-  \end{itemize}      
-  
+!for ;course in ;training
+    ;course.year \textit{;course.title} at {;course.school} \\
+!end for
+
+\section{Languages} 
+!for ;key, ;value in ;languages.items()
+    \textbf{;key}: \textit{;value} \\
+!end for
+
 \section{Volunteering}
-	\begin{itemize}
-    \vspace{2mm}
-      \item \textbf{East London}: Raising money for multi-ethnical youth clubs running The Big Half Race
-		  \item \textbf{Ireland}: Sports lessons and recreation activities for children in a community center.\vspace{1mm}
-		  \item \textbf{Israel and Palestine}: Gardening, sports lessons and recreation activities for children in summer camps.\vspace{1mm}
-		  \item \textbf{Cananéia, Brazil}: Logistic support for medical assistance and sports lessons and recreation activities for children in risky areas.
-	\end{itemize}
+!for ;action in ;volunteering
+    ;action.year \textit{;action.title}: {;action.description} \\
+!end for
 
 \end{resume} 
 \end{document}

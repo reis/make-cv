@@ -13,6 +13,7 @@ import functools
 import os
 import sys
 import yaml
+from pprint import pprint
 
 
 def escape_leaves(escape_func, contents):
@@ -53,7 +54,6 @@ if __name__ == '__main__':
     options, extension = get_cmd_line_args()
 
     contents = yaml.load(open(options.source, 'r').read())
-
     escape_func = getattr(escapes, 'escape_' + extension, lambda x: x)
     escaped_contents = escape_leaves(escape_func, contents)
     template = Template(file=options.template % extension,

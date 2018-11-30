@@ -25,6 +25,15 @@ presentation and have my CV in as many formats as possible.
 4. Compile, preview, and edit.
     make
 
-TODO:
+## TODO:
 
-- create more template
+- create the SQL template
+
+## Acknowledgements
+
+This process was inspired by many people trying to solve the same problem. Many thanks them:
+
+- David Hu: https://github.com/divad12/resume
+- Eliseo Papa: https://github.com/elipapa/markdown-cv
+- Paulo Benatto: https://github.com/patito/cv
+- Michael DeCorte: https://ctan.org/pkg/res?lang=en
